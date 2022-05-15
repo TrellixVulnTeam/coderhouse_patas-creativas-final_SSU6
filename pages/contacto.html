@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Contácto - Patas Creativas</title>
+    <meta
+      name="description"
+      content="Pasa y dinos hola, vamos a estar encantados de escucharte."
+    />
+    <meta
+      name="keywords"
+      content="ilustración, iconografía, branding, contratar, contacto"
+    />
+    <meta name="author" content="Pedro de Ibarlucea" />
+    <meta name="copyright" content="Patas Creativas" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://pdi-ds.github.io/coderhouse_patas-creativas-sass/"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content_wrapper">
+          <a href="../index.html">
+            <img
+              src="../img/logo_patas_creatvas.svg"
+              alt="logo de patas creativas"
+              class="logo"
+            />
+          </a>
+          <ul id="menu">
+            <li class="body">
+              <a href="../pages/mision.html">misión</a>
+            </li>
+            <li class="body">
+              <a href="../pages/servicios.html">servicios</a>
+            </li>
+            <li class="body">
+              <a href="../pages/muestras.html">muestras</a>
+            </li>
+            <li class="body">
+              <a href="../pages/contacto.html">contácto</a>
+            </li>
+          </ul>
+          <div class="mobile-bar" onClick="toggleMobileMenu();">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section-contact">
+      <div class="container">
+        <div class="contact-content_wrapper">
+          <h2 class="contact-h2">¿Tenés alguna idea en mente?</h2>
+          <div class="contact-form_wrapper">
+            <form action="POST" class="contact-form">
+              <div class="contact-data">
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  class="nombre"
+                  name="nombre"
+                  id="nombre"
+                  required="required"
+                  aria-required="true"
+                />
+                <input
+                  type="text"
+                  placeholder="Apellido"
+                  class="apellido"
+                  name="apellido"
+                  id="apellido"
+                  required="required"
+                  aria-required="true"
+                />
+              </div>
+              <div class="contact-data">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="correo"
+                  name="correo"
+                  id="correo"
+                  required="required"
+                  aria-required="true"
+                />
+                <input
+                  type="tel"
+                  placeholder="Teléfono"
+                  class="telefono"
+                  name="telefono"
+                  id="telefono"
+                  required="required"
+                  aria-required="true"
+                />
+              </div>
+              <div>
+                <label for="contact-services"
+                  ><p class="display5 contact-label">
+                    ¿Que servicios se están consultando?
+                  </p></label
+                >
+                <div class="contact-checkbox_wrapper">
+                  <div>
+                    <input
+                      type="checkbox"
+                      class="servicios"
+                      name="servicios[]"
+                      id="branding"
+                      value="branding"
+                    />
+                    <label for="servicios-0" class="body">Branding</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      class="servicios"
+                      name="servicios[]"
+                      id="ilustracion"
+                      value="ilustracion"
+                    />
+                    <label for="servicios-1" class="body">Ilustración</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      class="servicios"
+                      name="servicios[]"
+                      id="iconografia"
+                      value="iconografia"
+                    />
+                    <label for="servicios-2" class="body">Iconografía</label>
+                  </div>
+                </div>
+              </div>
+              <textarea
+                class="contact-textarea"
+                type="textarea"
+                placeholder="Especificar más datos..."
+                name="datos"
+                id="datos"
+                required="required"
+                aria-required="true"
+              ></textarea>
+              <input type="submit" value="Enviar" class="btn cta1" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content_wrapper">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="../img/facebook_logo.svg"
+              alt="logo de facebook"
+              class="footer-social"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img
+              src="../img/instagram_logo.svg"
+              alt="logo de instagram"
+              class="footer-social"
+          /></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><img
+              src="../img/linkedin_logo.svg"
+              alt="logo de linkedin"
+              class="footer-social"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleMobileMenu() {
+        document.querySelector("#menu").classList.toggle("active");
+        document.querySelector(".mobile-bar").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

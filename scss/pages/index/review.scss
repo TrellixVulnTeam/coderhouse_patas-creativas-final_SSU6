@@ -1,0 +1,133 @@
+.indexSection-review {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  .indexReview-content_wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .indexReview-h2 {
+      margin-bottom: 100px;
+      text-align: center;
+    }
+    .indexReview-card_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .indexReview-card_item {
+        align-items: stretch;
+        background-color: map-get($map: $paleta, $key: "bg-color-alternative");
+        border-radius: 40px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        display: flex;
+        flex-direction: column;
+        min-height: 230px;
+        margin: 20px;
+        padding: 20px;
+        width: 285px;
+        transition-property: all;
+        transition-duration: 100ms;
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        &:hover {
+          box-shadow: 4px 4px 0 0 black;
+          transform: translate(-3px, -3px);
+          transition-property: all;
+          transition-duration: 100ms;
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .indexReview-text {
+          margin: 0 0 50px 0;
+        }
+        .indexReview-person_wrapper {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          margin-top: auto;
+          .indexReview-img {
+            clip-path: circle();
+            height: 38px;
+            margin: 0 15px 0 0;
+            object-fit: cover;
+            width: 38px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .indexSection-review {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    .indexReview-content_wrapper {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .indexReview-h2 {
+        margin-bottom: 100px;
+        text-align: center;
+      }
+      .indexReview-card_wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .indexReview-card_item {
+          align-items: stretch;
+          background-color: map-get(
+            $map: $paleta,
+            $key: "bg-color-alternative"
+          );
+          border-radius: 40px;
+          border-style: solid;
+          border-width: 1px;
+          border-color: black;
+          display: flex;
+          flex-direction: column;
+          min-height: 100%;
+          margin: 20px;
+          padding: 20px;
+          width: calc(100% - 150px);
+          transition-property: all;
+          transition-duration: 100ms;
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          &:hover {
+            box-shadow: 4px 4px 0 0 black;
+            transform: translate(-3px, -3px);
+            transition-property: all;
+            transition-duration: 100ms;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          }
+          .indexReview-text {
+            margin: 0 0 50px 0;
+          }
+          .indexReview-person_wrapper {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            margin-top: auto;
+            .indexReview-img {
+              clip-path: circle();
+              height: 38px;
+              margin: 0 15px 0 0;
+              object-fit: cover;
+              width: 38px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

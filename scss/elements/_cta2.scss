@@ -1,0 +1,26 @@
+@mixin pop {
+  border-color: black;
+  box-shadow: 4px 4px 0 0 black;
+  transform: translate(-3px, -3px);
+  transition-property: all;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cta2 {
+  @extend.btn;
+  border-radius: 8px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  border-color: map-get($map: $paleta, $key: "bg-color-alt");
+  color: map-get($map: $paleta, $key: "title-color");
+  padding: 15px 30px 15px 30px;
+  transition-property: all;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  &:hover {
+    @include pop();
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Misión - Patas Creativas</title>
+    <meta
+      name="description"
+      content="Conoce nuestra historia desde el inicio y todo el por venir que tanto esperámos."
+    />
+    <meta
+      name="keywords"
+      content="ilustración, iconografía, branding, historia"
+    />
+    <meta name="author" content="Pedro de Ibarlucea" />
+    <meta name="copyright" content="Patas Creativas" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://pdi-ds.github.io/coderhouse_patas-creativas-sass/"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content_wrapper">
+          <a href="../index.html">
+            <img
+              src="../img/logo_patas_creatvas.svg"
+              alt="logo de patas creativas"
+              class="logo"
+            />
+          </a>
+          <ul id="menu">
+            <li class="body">
+              <a href="../pages/mision.html">misión</a>
+            </li>
+            <li class="body">
+              <a href="../pages/servicios.html">servicios</a>
+            </li>
+            <li class="body">
+              <a href="../pages/muestras.html">muestras</a>
+            </li>
+            <li class="body">
+              <a href="../pages/contacto.html">contácto</a>
+            </li>
+          </ul>
+          <div class="mobile-bar" onClick="toggleMobileMenu();">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section-mision">
+      <div class="container">
+        <div class="mision-content_wrapper">
+          <h2 class="mision-h2">Desde que nuestro proyecto empezó</h2>
+          <p class="mision-body body2">
+            Patas creativas vio la luz con la ayuda de dos jovenes diseñadores,
+            ellos son amantes de los animales y vieron que muchos de los
+            refugios que seguían les faltaba algo, una identidad visual de
+            calidad.<br />
+            <br />
+            eso es que se juntaron y decidieron crear Patas Creativas, un
+            conjunto de elementos visuales modulares que ayudarán a varios
+            refugios en crear su identidad perfecta.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-newsletter">
+      <div class="container">
+        <div class="newsletter-content_wrapper">
+          <h2 class="newsletter-h2">Únete a nuestro boletín oficial</h2>
+          <div class="newsletter-form_wrapper">
+            <form action="POST" class="newsletter-form_item">
+              <input
+                type="email"
+                placeholder="mail@mail.com"
+                name="email"
+                required="required"
+                aria-required="true"
+              />
+              <input type="submit" value="Enviar" class="btn cta1" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content_wrapper">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="../img/facebook_logo.svg"
+              alt="logo de facebook"
+              class="footer-social"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img
+              src="../img/instagram_logo.svg"
+              alt="logo de instagram"
+              class="footer-social"
+          /></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><img
+              src="../img/linkedin_logo.svg"
+              alt="logo de linkedin"
+              class="footer-social"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleMobileMenu() {
+        document.querySelector("#menu").classList.toggle("active");
+        document.querySelector(".mobile-bar").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

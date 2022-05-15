@@ -1,0 +1,11 @@
+.footer-content_wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .footer-social {
+    height: 32px;
+    margin: 20px 15px 20px 15px;
+    width: auto;
+  }
+}

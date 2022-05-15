@@ -1,0 +1,69 @@
+html {
+  background-color: map-get($map: $paleta, $key: "bg-color");
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-animation: fade-in 0.5s ease-in-out both;
+  animation: fade-in 0.5s ease-in-out both;
+}
+
+section {
+  background-color: map-get($map: $paleta, $key: "bg-color");
+}
+
+button {
+  all: unset;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: map-get($map: $paleta, $key: "text-color");
+}
+
+input {
+  background-color: map-get($map: $paleta, $key: "bg-color");
+  border-color: black;
+  border-radius: 10px;
+  border-width: 2px;
+  color: map-get($map: $paleta, $key: "text-color");
+  padding: 15px 17px 15px 17px;
+  transition-duration: 100ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  &:hover {
+    box-shadow: 4px 4px 0 0 black;
+    transform: translate(-3px, -3px);
+    transition-duration: 100ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+textarea {
+  background-color: map-get($map: $paleta, $key: "bg-color");
+  border-color: black;
+  border-radius: 10px;
+  border-width: 2px;
+  color: map-get($map: $paleta, $key: "text-color");
+  padding: 15px 17px 15px 17px;
+  transition-duration: 100ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  &:hover {
+    box-shadow: 4px 4px 0 0 black;
+    transform: translate(-3px, -3px);
+    transition-duration: 100ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+footer {
+  border-top: solid 1px map-get($map: $paleta, $key: "bg-color-alt");
+}

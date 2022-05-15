@@ -1,0 +1,101 @@
+.section-servicios {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px 0 50px 0;
+  .servicios-h2 {
+    text-align: center;
+    margin: 0 auto 80px auto;
+    max-width: 15ch;
+  }
+  .servicios-card_wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px 0px 60px 0px;
+    gap: 30px;
+    .servicios-card_item {
+      display: flex;
+      flex-direction: column-reverse;
+      border: 3px;
+      border-style: solid;
+      border-radius: 35px;
+      border-color: black;
+      box-shadow: 7px 7px 0 0 black;
+      gap: 70px;
+      width: 400px;
+      align-items: center;
+      align-content: center;
+      justify-content: flex-start;
+      padding: 100px;
+      .servicios-card_text {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+      .servicios-img {
+        height: auto;
+        width: 350px;
+        clip-path: circle();
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-servicios {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0 50px 0;
+    .servicios-h2 {
+      text-align: center;
+      margin: 0 auto 80px auto;
+      max-width: 15ch;
+    }
+    .servicios-card_wrapper {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0px 0px 60px 0px;
+      gap: 30px;
+      .servicios-card_item {
+        display: flex;
+        flex-direction: column-reverse;
+        border: 3px;
+        border-style: solid;
+        border-radius: 35px;
+        border-color: black;
+        box-shadow: 7px 7px 0 0 black;
+        gap: 30px;
+        width: 60%;
+        min-height: 451px;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-start;
+        padding: 50px 30px 50px 30px;
+        .servicios-card_text {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          .servicios-img {
+            height: auto;
+            width: 35px;
+            clip-path: circle();
+          }
+        }
+      }
+    }
+  }
+}

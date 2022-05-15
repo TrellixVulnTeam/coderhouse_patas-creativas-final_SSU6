@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>¡404! - Patas Creativas</title>
+    <meta
+      name="description"
+      content="Ups.. Algo salió mal, por favor, ponte en contacto con nosotros para resolver el problema"
+    />
+    <meta name="keywords" content="error" />
+    <meta name="author" content="Pedro de Ibarlucea" />
+    <meta name="copyright" content="Patas Creativas" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://pdi-ds.github.io/coderhouse_patas-creativas-sass/"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content_wrapper">
+          <a href="../index.html">
+            <img
+              src="../img/logo_patas_creatvas.svg"
+              alt="logo de patas creativas"
+              class="logo"
+            />
+          </a>
+          <ul id="menu">
+            <li class="body">
+              <a href="../pages/mision.html">misión</a>
+            </li>
+            <li class="body">
+              <a href="../pages/servicios.html">servicios</a>
+            </li>
+            <li class="body">
+              <a href="../pages/muestras.html">muestras</a>
+            </li>
+            <li class="body">
+              <a href="../pages/contacto.html">contácto</a>
+            </li>
+          </ul>
+          <div class="mobile-bar" onClick="toggleMobileMenu();">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section404">
+      <div class="container">
+        <div class="section404-content_wrapper">
+          <h1 class="section404-h1">¡404!</h1>
+          <p>Ups.. esta página no se encuentra disponible :c</p>
+          <a href="../index.html" class="btn cta1">Volver al inicio</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleMobileMenu() {
+        document.querySelector("#menu").classList.toggle("active");
+        document.querySelector(".mobile-bar").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
